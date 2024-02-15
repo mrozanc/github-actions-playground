@@ -45,7 +45,7 @@ jobs:
       run: ./gradlew publish
       env:
         USERNAME: ${{ github.actor }}
-        PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Upload build reports
       uses: actions/upload-artifact@v3
