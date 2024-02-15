@@ -7,6 +7,10 @@ repositories {
     mavenCentral()
 }
 
+java {
+    withSourcesJar()
+}
+
 kotlin {
     jvmToolchain(21)
 }
